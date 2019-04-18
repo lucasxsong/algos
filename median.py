@@ -62,7 +62,7 @@ def median(arr, n):
   
       
 # Driver code 
-arr1 = [1, 2, 3, 6] 
-arr2 = [4, 6, 8, 10] 
+arr1 = [1, 4, 6, 8, 10] 
+arr2 = [2, 6, 9, 12, 15] 
 n = len(arr1) 
 print(int(getMedian(arr1,arr2,n))) 
