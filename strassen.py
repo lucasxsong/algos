@@ -1,4 +1,4 @@
-defstrassen(Y,Z):
+def strassen(Y,Z):
     if len(Y) <= 2:
         return mult(Y,Z)
     else:
@@ -12,6 +12,11 @@ defstrassen(Y,Z):
         M6 = strassen(add(A,B),H)
         M7 = strassen(D,sub(G,E))
         I = sub(sub(add(M2,M3),M6),M7)
-        J = add(M4,M6)K = add(M5,M7)
+        J = add(M4,M6)
+        K = add(M5,M7)
         L = sub(sub(sub(M1,M3),M4),M5)
         return recompose(I,J,K,L)
+
+def printMatrix(matrix):
+    for line in matrix:
+        print "\t".join(map(str,line))
